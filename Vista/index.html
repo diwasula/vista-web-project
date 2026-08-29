@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html>
+    
+<head>
+   
+   <link rel="stylesheet" href="style.css">
+   <title> Home Page </title>
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <meta charset="UTF-8">
+
+</head>
+
+<body>
+
+   <div class = "top">
+      <h4 id = "left">Vista</h4>
+
+      <a href="index.html" class="mybutton">Home</a>
+      <a href="PersonalDetails.html" class="mybutton">Booking</a>
+      <a href="Search.html" class="mybutton">Search Reservation</a> 
+   </div>
+
+<h1>
+   Welcome to Vista Hotel!
+</h1> <hr>
+<form action="PersonalDetails.html" method="GET">
+   <label>
+    Check-in date
+   </label>
+<input type ="date" name="date_in" required min="2026-7-1" max="2027-7-1">
+<label> Check-out date</label>
+      <input type ="date" name="date_out" required min="2026-7-2" >
+<br> <br>
+<label for ="Adults">
+   Adults
+</label>
+<input type="number" name="Adults" value="1" min ="1" max ="8">
+
+
+<label for ="Children">
+   Children
+</label>
+
+<input type ="number" name="Children
+" value="0" min ="0" max ="4">
+<br> <br>
+<label> Choose your Room</label>
+<select name="room_type" id="room_type">
+<option value ="single_room"> Single Room</option>
+<option value ="double_room"> Double Room</option>
+<option value ="quad_room"> Quad Room</option>
+<option value ="studio_room"> Studio Room</option>
+<option value ="royal_room"> Royal Room</option>
+
+</select>
+<br> <br>
+
+<button type ="submit">Next</button>
+</button>
+
+</form>
+
+
+</body>
+<script src="script.js"></script>
+
+</html>
