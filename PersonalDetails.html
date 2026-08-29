@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+    
+<head>
+   <link rel="stylesheet" href="style.css">
+   <title> Reservation Page </title>
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <meta charset="UTF-8">
+
+</head>
+<body>
+<h1>
+   <div class = "top">
+      <h4 id = "left">Vista</h4>
+
+      <a href="index.html" class="mybutton">Home</a>
+      <a href="PersonalDetails.html" class="mybutton">Booking</a>
+      <a href="Search.html" class="mybutton">Search Reservation</a> 
+   </div>
+
+Please fill in the details below to finalize your booking</h1> <hr>
+<form id="detailsForm" action="process_booking.php" method="POST">
+      <label>
+    Enter your First Name
+   </label>
+   <input type ="text" id="firstName" name="firstName" placeholder="First Name" required minlength="4" maxlength="16">
+ <label>
+    Enter your Last Name
+   </label>
+<input type ="text" name="lastName" placeholder="Last Name" required minlength="4" maxlength="16">
+<br><br>
+<label> Enter your email</label>
+<input type="email" name="email" required placeholder="email">
+<label>Phone Number
+</label>
+<input type="tel" name="phone" required placeholder="Phone Number" pattern="[0-9]{10}">
+<br><br>
+<label>
+</label>
+
+<input type="hidden" name="room_type" id="h_room_type">
+<input type="hidden" name="date_in"   id="h_date_in">
+<input type="hidden" name="date_out"  id="h_date_out">
+<input type="hidden" name="Adults"    id="h_adults">
+<input type="hidden" name="Children"  id="h_children">
+
+<br><br>
+
+<input type ="reset">
+<input type ="submit" name="submit" value="Submit">
+</form>
+
+</body>
+<script src="details.js"></script>
+</html>
